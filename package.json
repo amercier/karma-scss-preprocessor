@@ -1,0 +1,38 @@
+{
+  "name": "karma-scss-preprocessor",
+  "version": "0.0.0",
+  "description": "Karma preprocessor to compile SCSS on the fly with node-sass",
+  "homepage": "https://github.com/amercier/karma-scss-preprocessor",
+  "bugs": {
+    "url": "https://github.com/amercier/karma-scss-preprocessor/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amercier/karma-scss-preprocessor.git"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amercier/karma-scss-preprocessor.git"
+  },
+  "keywords": [
+    "karma-plugin",
+    "karma-preprocessor",
+    "sass",
+    "scss",
+    "node-sass"
+  ],
+  "devDependencies": {
+    "node-sass": "^3.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" >&2 && exit 1"
+  },
+  "author": {
+    "name": "Alex Mercier",
+    "email": "pro.alexandre.mercier@gmail.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^1.1.0"
+  }
+}
