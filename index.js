@@ -36,7 +36,7 @@ function createScssPreprocessor(args, config, logger, helper) {
     transformPath: function (filepath) {
       return filepath.replace(/\.scss$/, '.css');
     }
-  }, args.options || {}, config || {});
+  }, args.options || {}, config.options || {});
 
   return function (content, file, done) {
     var result = null;

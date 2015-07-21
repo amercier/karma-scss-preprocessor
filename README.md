@@ -28,10 +28,12 @@ module.exports = function (config) {
       'src/**/*.scss': ['scss']
     },
     scssPreprocessor: {
-      sourceMap: true,
-      includePaths: [
-        'bower_components'
-      ]
+      options: {
+        sourceMap: true,
+        includePaths: [
+          'bower_components'
+        ]
+      }
     }
   });
 };
