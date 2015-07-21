@@ -10,10 +10,6 @@
     "type": "git",
     "url": "https://github.com/amercier/karma-scss-preprocessor.git"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/amercier/karma-scss-preprocessor.git"
-  },
   "keywords": [
     "karma-plugin",
     "karma-preprocessor",
@@ -33,6 +29,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "chalk": "^1.1.0"
+    "chalk": "^1.1.0",
+    "node-sass": "^3.2.0"
   }
 }
