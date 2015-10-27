@@ -27,6 +27,7 @@ function formattedScssMessage(error) {
  * @param helper {Object} Karma's helper functions.
  */
 function createScssPreprocessor(args, config, logger, helper) {
+  config = config || {};
 
   var log = logger.create('preprocessor.scss');
 
