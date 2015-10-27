@@ -22,7 +22,7 @@ function formattedScssMessage(error) {
 /**
  * Preprocessor factory
  * @param args   {Object} Config object of custom preprocessor.
- * @param config {Object} Config object of babelPreprocessor.
+ * @param config {Object} Config object of scssPreprocessor.
  * @param logger {Object} Karma's logger.
  * @param helper {Object} Karma's helper functions.
  */
