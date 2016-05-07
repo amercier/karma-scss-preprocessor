@@ -4,9 +4,9 @@ Contributing
 Issues
 ------
 
-Feel free to [open an issue](https://github.com/amercier/npm-package-skeleton/issues/new),
-or propose a [pull request](https://github.com/amercier/npm-package-skeleton/pulls).
-To prevent duplication, please look at [existing issues](https://github.com/amercier/npm-package-skeleton/issues?q=is%3Aissue) before posting a new one.
+Feel free to [open an issue](https://github.com/amercier/karma-scss-preprocessor/issues/new),
+or propose a [pull request](https://github.com/amercier/karma-scss-preprocessor/pulls).
+To prevent duplication, please look at [existing issues](https://github.com/amercier/karma-scss-preprocessor/issues?q=is%3Aissue) before posting a new one.
 
 TL;DR
 -----
@@ -29,7 +29,7 @@ Getting started
 _**Prerequisites:** you need to have `git`, `node` (>=0.10) and `npm` installed_.
 
 ```bash
-git clone https://github.com/amercier/npm-package-skeleton.git
+git clone https://github.com/amercier/karma-scss-preprocessor.git
 ```
 
 _(or your clone's Git URL)_
@@ -47,11 +47,11 @@ npm test
 ```
 
 ```log
-> package-skeleton@0.1.0-alpha.2 test /.../npm-package-skeleton
+> karma-scss-preprocessor@0.1.0-alpha.2 test /.../karma-scss-preprocessor
 > npm run lint && rm -rf coverage && istanbul cover _mocha -- specs --recursive --compilers js:babel-register
 
 
-> package-skeleton@0.1.0-alpha.2 lint /.../npm-package-skeleton
+> karma-scss-preprocessor@0.1.0-alpha.2 lint /.../karma-scss-preprocessor
 > eslint .
 
 
