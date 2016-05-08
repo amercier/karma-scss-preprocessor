@@ -1,7 +1,7 @@
 {
   "name": "karma-scss-preprocessor",
   "version": "1.0.3",
-  "description": "Skeleton of a simple NPM Package with Babel and CI already configured.",
+  "description": "Karma preprocessor to compile SCSS on the fly with node-sass",
   "license": "ISC",
   "repository": "amercier/karma-scss-preprocessor",
   "author": "Alex Mercier <pro.alexandre.mercier@gmail.com> (http://amercier.com)",
@@ -19,21 +19,11 @@
   },
   "main": "dist/lib/index.js",
   "keywords": [
-    "package",
-    "skeleton",
-    "example",
-    "node",
-    "npm",
-    "babel",
-    "ci",
-    "code",
-    "codeclimate",
-    "codecov",
-    "coverage",
-    "eslint",
-    "gemnasium",
-    "istanbul",
-    "mocha"
+    "karma-plugin",
+    "karma-preprocessor",
+    "sass",
+    "scss",
+    "node-sass"
   ],
   "dependencies": {
     "chalk": "^1.1.3"
