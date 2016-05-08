@@ -1,6 +1,4 @@
 *.log
 .*
 coverage
-esdoc
-esdoc.json
 specs

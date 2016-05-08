@@ -16,7 +16,6 @@ TL;DR
 | `npm test`      | Runs test suite once using Mocha. Generates code coverage report in the `coverage` directory (run `open coverage/index.html` to view full HTML report). |
 | `npm start`     | Runs test once, watch for changes in dev/test files, then re-runs tests automatically when a file changes. <br><small>_**Note:** as opposed as `npm test`, it doesn't generate a code coverage report._</small> |
 | `npm run lint`  | Runs ESLint linter. <br><small>_**Note:** this is automatically run before the test suite by `npm test`, but not by `npm start`_.</small> |
-| `npm run doc`   | Generates API documentation in `esdoc` folder. <br><small>_**Note:** this is not expected to be run manually since ESDoc hosting service runs it for you._</small>  |
 | `npm transpile` | Transpile all files from `src` directory to `dist`, using Babel. <br><small>_**Note:** this is not expected to be run manually since it is automatically run before NPM packaging (`package.json`'s `prepublish` script)._</small> |
 
 

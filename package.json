@@ -11,7 +11,6 @@
   "scripts": {
     "transpile": "rimraf dist && babel src -d dist",
     "prepublish": "npm run transpile",
-    "doc": "rimraf esdoc && esdoc -c esdoc.json",
     "lint": "eslint .",
     "mocha": "mocha specs/lib --recursive --compilers js:babel-register",
     "start": "export NODE_ENV=development; npm run mocha -- --watch --growl",
@@ -41,7 +40,6 @@
     "chai": "^3.5.0",
     "codeclimate-test-reporter": "^0.3.1",
     "codecov": "^1.0.1",
-    "esdoc": "^0.4.7",
     "eslint": "^2.8.0",
     "eslint-config-airbnb-base": "^3.0.0",
     "eslint-plugin-import": "^1.5.0",
