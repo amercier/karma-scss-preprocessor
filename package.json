@@ -13,7 +13,7 @@
     "prepublish": "npm run transpile",
     "doc": "rimraf esdoc && esdoc -c esdoc.json",
     "lint": "eslint .",
-    "mocha": "mocha specs --recursive --compilers js:babel-register",
+    "mocha": "mocha specs/lib --recursive --compilers js:babel-register",
     "start": "export NODE_ENV=development; npm run mocha -- --watch --growl",
     "test": "export NODE_ENV=test; npm run lint && rimraf coverage && nyc npm run mocha"
   },
