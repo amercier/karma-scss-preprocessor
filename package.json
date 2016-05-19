@@ -43,7 +43,7 @@
     "eslint": "^2.8.0",
     "eslint-config-airbnb-base": "^3.0.0",
     "eslint-plugin-import": "^1.5.0",
-    "install": "^0.7.3",
+    "install": "^0.8.0",
     "karma": "^0.13.22",
     "karma-chai": "^0.1.0",
     "karma-mocha": "^1.0.1",
