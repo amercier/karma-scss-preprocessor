@@ -6,7 +6,7 @@
   "env": {
     "test": {
       "plugins": [
-        [ "__coverage__", { "only": "src/" }]
+        ["istanbul", { "exclude": "specs/**/*.spec.js" }]
       ]
     }
   }
