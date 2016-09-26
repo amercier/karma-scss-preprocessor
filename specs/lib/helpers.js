@@ -9,7 +9,7 @@ export function revert(promise, reason = 'Unexpected resolved Promised') {
 
 export function runKarma(config) {
   return new Promise((resolve, reject) => {
-    new Server(config, exitCode => {
+    new Server(config, (exitCode) => {
       if (exitCode) {
         reject(`Karma has exited with ${exitCode}`);
       } else {
@@ -18,3 +18,4 @@ export function runKarma(config) {
     }).start();
   });
 }
+
