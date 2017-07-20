@@ -1,7 +1,7 @@
 import sass from 'node-sass';
 import path from 'path';
 import chalk from 'chalk';
-import _ from 'lodash';
+import { clone, merge } from 'lodash';
 
 function formattedScssMessage(error, file) {
   const filePath = !error || !error.file || error.file === 'stdin' ? file.path : error.file;
@@ -24,7 +24,7 @@ function createScssPreprocessor(args, config = {}, logger) {
   const log = logger.create('preprocessor.scss');
 
   // Options. See https://www.npmjs.com/package/node-sass for details
-  const options = _.merge({
+  const options = merge({
     sourceMap: false,
     transformPath(filepath) {
       return filepath.replace(/\.scss$/, '.css');
@@ -40,7 +40,7 @@ function createScssPreprocessor(args, config = {}, logger) {
     file.path = file.originalPath.replace(/\.scss$/, '.css'); // eslint-disable-line
 
     // Clone the options because we need to mutate them
-    const opts = _.clone(options);
+    const opts = clone(options);
 
     // Add current file's directory into include paths
     opts.includePaths = [path.dirname(file.originalPath)].concat(opts.includePaths || []);
