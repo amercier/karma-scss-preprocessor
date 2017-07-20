@@ -1,6 +1,6 @@
 {
   "name": "karma-scss-preprocessor",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Karma preprocessor to compile SCSS on the fly with node-sass",
   "license": "ISC",
   "repository": "amercier/karma-scss-preprocessor",
