@@ -22,7 +22,7 @@ function run(files, options = {}) {
 
 describe('karmaScssPreprocessor', () => {
   it('exists', () => expect(karmaScssPreprocessor).to.exist);
-  it('is an object', () => expect(karmaScssPreprocessor).to.be.an.object);
+  it('is an object', () => expect(karmaScssPreprocessor).to.be.an('object'));
 
   it('processes .scss files', () => run(['red.spec.js', 'red.spec.scss']));
 
