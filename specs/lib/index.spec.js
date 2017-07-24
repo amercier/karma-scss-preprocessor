@@ -28,12 +28,12 @@ describe('karmaScssPreprocessor', () => {
 
   it('generates source maps', () => run(
     ['red.spec.js', 'red.spec.scss'],
-    { sourceMap: true }
+    { sourceMap: true },
   ));
 
   it('allows including external paths', () => run(
     ['lib-blue.spec.js', 'lib-blue.spec.scss'],
-    { includePaths: ['specs/fixture/lib'] }
+    { includePaths: ['specs/fixture/lib'] },
   ));
 
   it('fails when a syntax error is found', () => revert(run(['error-syntax-error.scss'])));
