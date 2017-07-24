@@ -2,6 +2,7 @@ import sass from 'node-sass';
 import path from 'path';
 import chalk from 'chalk';
 import { clone, merge } from 'lodash';
+import stripAnsi from 'strip-ansi';
 
 function formattedScssMessage(error, file) {
   const filePath = !error || !error.file || error.file === 'stdin' ? file.path : error.file;
@@ -58,7 +59,7 @@ function createScssPreprocessor(args, config = {}, logger) {
     } catch (error) {
       const message = formattedScssMessage(error, file);
       log.error('%s\n  at %s:%d', message, file.originalPath, error.line);
-      error.message = chalk.stripColor(message);
+      error.message = stripAnsi(message);
       return done(error, null);
     }
 
