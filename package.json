@@ -26,7 +26,8 @@
   ],
   "dependencies": {
     "chalk": "^2.0.1",
-    "lodash": "^4.17.4"
+    "lodash": "^4.17.4",
+    "strip-ansi": "^4.0.0"
   },
   "peerDependencies": {
     "node-sass": ">= 3.x"
