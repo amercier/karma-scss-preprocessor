@@ -30,7 +30,7 @@
     "strip-ansi": "^4.0.0"
   },
   "peerDependencies": {
-    "node-sass": ">= 3.x"
+    "node-sass": ">= 3.0.0"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
