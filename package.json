@@ -6,7 +6,7 @@
   "repository": "amercier/karma-scss-preprocessor",
   "author": "Alex Mercier <pro.alexandre.mercier@gmail.com> (http://amercier.com)",
   "engines": {
-    "node": ">=4.0"
+    "node": ">=6.0"
   },
   "scripts": {
     "transpile": "rimraf dist && babel src -d dist",
