@@ -8,10 +8,11 @@ matrix:
     env: NPM_DEPLOY=true
   - node_js: 6 # Minimum supported
 script:
-- npm test -- -- --timeout 10000
+  - npm test -- -- --timeout 10000
 after_success:
-- '[[ "$REPORT_COVERAGE" != true ]] || cat coverage/lcov.info | ./node_modules/.bin/codecov'
+  - '[[ "$REPORT_COVERAGE" != true ]] || cat coverage/lcov.info | ./node_modules/.bin/codecov'
 deploy:
+  skip_cleanup: true
   provider: npm
   email: pro.alexandre.mercier@gmail.com
   api_key: $NPM_AUTH_TOKEN
@@ -21,4 +22,4 @@ deploy:
     condition: $NPM_DEPLOY = true # Prevents publishing on each matrix build
 cache:
   directories:
-  - $HOME/.nvm
+    - $HOME/.nvm
