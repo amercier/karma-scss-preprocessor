@@ -11,7 +11,7 @@ export function runKarma(config) {
   return new Promise((resolve, reject) => {
     new Server(config, (exitCode) => {
       if (exitCode) {
-        reject(`Karma has exited with ${exitCode}`);
+        reject(new Error(`Karma has exited with ${exitCode}`));
       } else {
         resolve();
       }
