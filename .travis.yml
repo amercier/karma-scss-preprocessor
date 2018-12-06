@@ -11,7 +11,6 @@ script:
 - npm test -- -- --timeout 10000
 after_success:
 - '[[ "$REPORT_COVERAGE" != true ]] || cat coverage/lcov.info | ./node_modules/.bin/codecov'
-- '[[ "$REPORT_COVERAGE" != true ]] || cat coverage/lcov.info | ./node_modules/.bin/codeclimate-test-reporter'
 deploy:
   provider: npm
   email: pro.alexandre.mercier@gmail.com
