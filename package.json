@@ -10,11 +10,12 @@
   },
   "scripts": {
     "transpile": "rimraf dist && babel src -d dist",
-    "prepublish": "npm run transpile",
+    "prepublish": "npm run snyk-protect; npm run transpile",
     "lint": "eslint .",
     "mocha": "mocha specs/lib --recursive --compilers js:babel-register",
     "start": "export NODE_ENV=development; npm run mocha -- --watch --growl",
-    "test": "export NODE_ENV=test; npm run lint && rimraf coverage && nyc npm run mocha"
+    "test": "export NODE_ENV=test; npm run lint && rimraf coverage && nyc npm run mocha",
+    "snyk-protect": "snyk protect"
   },
   "main": "dist/lib/index.js",
   "keywords": [
@@ -27,7 +28,8 @@
   "dependencies": {
     "chalk": "^2.4.1",
     "lodash": "^4.17.11",
-    "strip-ansi": "^5.0.0"
+    "strip-ansi": "^5.0.0",
+    "snyk": "^1.192.4"
   },
   "peerDependencies": {
     "node-sass": ">= 3.x"
@@ -66,5 +68,6 @@
       "html",
       "text"
     ]
-  }
+  },
+  "snyk": true
 }
