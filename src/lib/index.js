@@ -1,4 +1,4 @@
-import sass from 'node-sass';
+import sass from 'sass';
 import path from 'path';
 import chalk from 'chalk';
 import { clone, merge } from 'lodash';
@@ -24,7 +24,7 @@ function formattedScssMessage(error, file) {
 function createScssPreprocessor(args, config = {}, logger) {
   const log = logger.create('preprocessor.scss');
 
-  // Options. See https://www.npmjs.com/package/node-sass for details
+  // Options. See https://www.npmjs.com/package/sass for details
   const options = merge({
     sourceMap: false,
     transformPath(filepath) {
@@ -52,7 +52,7 @@ function createScssPreprocessor(args, config = {}, logger) {
       opts.omitSourceMapUrl = true;
     }
 
-    // Compile using node-sass (synchronously)
+    // Compile using sass (synchronously)
     try {
       opts.file = file.originalPath;
       result = sass.renderSync(opts);
